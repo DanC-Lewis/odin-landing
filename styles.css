@@ -1,10 +1,14 @@
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: "Roboto", sans-serif;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  background: #231f20;
+  color: goldenrod;
 }
 
 ul {
@@ -15,4 +19,57 @@ ul {
 
 a {
   text-decoration: none;
+  color: goldenrod;
+}
+
+.headerLogo {
+  font-weight: 800;
+  padding-left: 50px;
+  font-size: x-large;
+}
+
+.s1text {
+  height: 300px;
+  width: 250px;
+  color: goldenrod;
+}
+
+.sec1 {
+  background: #231f20;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 10px 5px 5px violet;
+}
+
+.sec2 {
+  background: whitesmoke;
+}
+
+.s2h1 {
+  text-align: center;
+}
+
+.boxes {
+  display: flex;
+  flex: 1;
+}
+
+.b1container,
+.b2container,
+.b3container,
+.b4container,
+.b5container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.b1text,
+.b2text,
+.b3text,
+.b4text,
+.b5text {
+  text-align: center;
 }
