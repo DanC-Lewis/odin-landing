@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -6,12 +8,15 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #231f20;
   color: goldenrod;
 }
 
 ul {
+  margin: 0;
+  padding-right: 0;
+  margin-right: 375px;
   display: flex;
   gap: 16px;
   list-style-type: none;
@@ -23,6 +28,7 @@ a {
 }
 
 .headerLogo {
+  margin-left: 300px;
   font-weight: 800;
   padding-left: 50px;
   font-size: x-large;
@@ -30,15 +36,27 @@ a {
 
 .s1text {
   height: 300px;
-  width: 250px;
+  width: 300px;
   color: goldenrod;
 }
 
 .sec1 {
   background: #231f20;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  box-shadow: 10px 5px 5px violet;
+  box-shadow: 10px 5px 5px #cf05f7;
+  margin-bottom: 0;
+}
+
+.sword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
 }
 
 .sec2 {
@@ -46,12 +64,22 @@ a {
 }
 
 .s2h1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  martin-top: 20px;
+  font-weight: 600;
 }
 
 .boxes {
   display: flex;
-  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+}
+
+.box {
+  width: 250px;
+  text-align: center;
 }
 
 .b1container,
@@ -59,11 +87,10 @@ a {
 .b3container,
 .b4container,
 .b5container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+  background: black;
+  border-left: 2px solid #cf05f7;
+  border-top: 2px solid #cf05f7;
+  box-shadow: 10px 5px 5px #cf05f7;
 }
 
 .b1text,
@@ -72,4 +99,61 @@ a {
 .b4text,
 .b5text {
   text-align: center;
+}
+
+.pilot {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  background: #231f20;
+  color: goldenrod;
+  border: 1px solid #cf05f7;
+  clip-path: polygon(
+    20% 0%,
+    100% 0,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    0 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+.hire {
+  background: goldenrod;
+  color: black;
+  clip-path: polygon(
+    20% 0%,
+    100% 0,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    0 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+.sec3 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  margin-left: 200px;
+  padding: 25px;
+  background: whitesmoke;
+  text-align: center;
+  box-shadow: 0 0 10px 10px lightgray;
+}
+
+.s3h1 {
+  text-align: right;
+  margin-right: 225px;
+}
+
+.sec4 {
+  background: #231f20;
+  margin-top: 10px;
+}
+.s4h1 {
+  color: goldenrod;
 }
