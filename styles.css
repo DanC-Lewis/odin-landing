@@ -1,8 +1,6 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
   font-family: "Roboto", sans-serif;
 }
 
@@ -16,10 +14,15 @@ body {
 ul {
   margin: 0;
   padding-right: 0;
-  margin-right: 375px;
-  display: flex;
-  gap: 16px;
   list-style-type: none;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-right: 375px;
+  margin-top: 35px;
+  gap: 24px;
 }
 
 a {
@@ -28,7 +31,7 @@ a {
 }
 
 .headerLogo {
-  margin-left: 300px;
+  margin-left: 290px;
   font-weight: 800;
   padding-left: 50px;
   font-size: x-large;
@@ -45,8 +48,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  box-shadow: 10px 5px 5px #cf05f7;
-  margin-bottom: 0;
 }
 
 .sword {
@@ -59,14 +60,9 @@ a {
   height: 250px;
 }
 
-.sec2 {
-  background: whitesmoke;
-}
-
 .s2h1 {
   display: flex;
   justify-content: center;
-  martin-top: 20px;
   font-weight: 600;
 }
 
@@ -119,9 +115,11 @@ a {
   );
 }
 
-.hire {
+.s1btn,
+.s4btn {
   background: goldenrod;
   color: black;
+  padding: 8px 16px;
   clip-path: polygon(
     20% 0%,
     100% 0,
@@ -137,23 +135,43 @@ a {
 .sec3 {
   display: flex;
   flex-direction: column;
-  margin-right: 200px;
-  margin-left: 200px;
-  padding: 25px;
   background: whitesmoke;
   text-align: center;
-  box-shadow: 0 0 10px 10px lightgray;
+}
+
+.quote {
+  font-size: 20px;
+  padding: 12px 12px;
+  margin: 100px;
 }
 
 .s3h1 {
   text-align: right;
-  margin-right: 225px;
+  margin-right: 300px;
 }
 
 .sec4 {
-  background: #231f20;
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
 }
-.s4h1 {
+
+.s4box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #231f20;
   color: goldenrod;
+  width: 50%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  padding: 16px;
 }
